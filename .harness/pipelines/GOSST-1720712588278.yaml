@@ -52,7 +52,7 @@ pipeline:
                   identifier: Build_Docker_Image
                   spec:
                     shell: Sh
-                    command: docker build
+                    command: docker build .
           platform:
             os: Linux
             arch: Amd64
