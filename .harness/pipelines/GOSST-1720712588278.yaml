@@ -46,6 +46,13 @@ pipeline:
                   spec:
                     shell: Sh
                     command: go build -o main
+              - step:
+                  type: Run
+                  name: Build Docker Image
+                  identifier: Build_Docker_Image
+                  spec:
+                    shell: Sh
+                    command: docker build
           platform:
             os: Linux
             arch: Amd64
